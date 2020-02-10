@@ -3,6 +3,33 @@
 #include <string.h>
 #include <stdint.h>
 
+char g_Command[1024];
+
+int GetCommand()
+{
+    memset(g_Command, '\0', sizeof(g_Command));
+    printf("")
+}
+
+int ExecCommand()
+{
+
+}
+
+int DealCommand()
+{
+
+}
+
+int main()
+{
+
+    return 0;
+}
+
+
+#if 0 
+
 int main()
 {
     while(1){
@@ -13,3 +40,5 @@ int main()
     }
     return 0;
 }
+
+#endif
