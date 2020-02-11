@@ -15,3 +15,20 @@ $(BIN):$(OBJ)                           # 目标对象:依赖对象
 .PHONY:clean                            # 伪目标
 clean:                                  # make clean
 	rm $(BIN) $(OBJ)                    # rm out test.o
+
+###################################################################################################################
+# Makefile 第一行不能为空
+# makefile 中的依赖方法必须以键入 tab 开头
+# make 永远只为了生成第一个目标对象而去服务
+
+#all:out aa    # 同时生成两个可执行程序out和aa
+#
+#out:test.o
+#	gcc test.o -o out
+#test.o:test.c
+#	gcc -c test.c -o test.o
+#
+#aa:aa.o
+#	gcc aa.o -o aa
+#aa.o:aa.c
+#	gcc -c aa.c -o aa.o
