@@ -3,7 +3,7 @@
 int func(int n)
 {
     int sum = 0;
-    for(int i = 0; i < 7; i++)
+    for(int i = 0; i < n; i++)
     {
         sum += i;
     }
@@ -12,9 +12,8 @@ int func(int n)
 
 int main()
 {
-    int i;
-    long result = 0;
-    for(i = 0; i <= 100; i++)
+    int result = 0;
+    for(int i = 0; i <= 100; i++)
     {
         result += i;
     }
@@ -22,3 +21,6 @@ int main()
     printf("result[1-250] = %d\n", func(250));
     return 0;
 }
+
+
+
