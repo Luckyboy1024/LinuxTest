@@ -104,5 +104,4 @@ fill_makefile $PWD/Makefile $1
 fill_vim $PWD/srcs/vim.sh $1
 chmod u+x $PWD/srcs/vim.sh 
 tree $PWD/ 
-
-
+#`cd $PWD/srcs/`
