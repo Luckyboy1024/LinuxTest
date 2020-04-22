@@ -2,11 +2,14 @@
 #include <ctype.h>
 int main()
 {
-	int a = 217;
-	char b;
-	printf("before toascii() : a_value = %d (%c)\n", a, a);
-	b = toascii(a);
-	printf("before toascii() : a_value = %d (%c)\n", b, b);
+	char s[] = "aBcDeFgH1234;!$#";
+	int i = 0;
+	printf("before toupper() : %s\n", s);
+	for (i = 0; i < sizeof(s); i++)
+	{
+		s[i] = toupper(s[i]);
+	}
+	printf("after  toupper() : %s\n", s);
 	return 0; 
 }
 
