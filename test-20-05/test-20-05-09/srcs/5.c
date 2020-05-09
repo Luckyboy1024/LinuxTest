@@ -3,9 +3,12 @@
 
 int main()
 {
-	double angle = 0.0;
-	angle = asin(0.5);
-	printf("angle = %f\n", angle);
+	double value[] = { 4.8, 1.12, -2.2, 0 };
+	int i = 0;
+	for (i = 0; value[i] != 0; i++)
+	{
+		printf("%f => %f\n", value[i], ceil(value[i]));
+	}
 	return 0; 
 }
 
