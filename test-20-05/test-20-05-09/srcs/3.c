@@ -3,9 +3,8 @@
 
 int main()
 {
-	double answer = 0.0;
-	answer = pow(2, 10);
-	printf("2^10 = %f\n", answer);
+	double answer = sin(0.5);
+	printf("sin(0.5) = %f\n", answer);
 	return 0; 
 }
 

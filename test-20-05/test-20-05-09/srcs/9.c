@@ -3,9 +3,8 @@
 
 int main()
 {
-	double angle = 0.0;
-	angle = atan(1);
-	printf("angle = %f\n", angle);
+	double answer = tan(0.5);
+	printf("tan(0.5) = %f\n", answer);
 	return 0; 
 }
 

@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
 
 int main()
 {
-	ldiv_t answer;
-	answer = ldiv(2345678, 76542);
-	printf("Quotient = %ld, remainder = %ld\n", answer.quot, answer.rem);
+	double answer = tanh(0.5);
+	printf("tanh(0.5) = %f\n", answer);
 	return 0; 
 }
 

@@ -3,11 +3,8 @@
 
 int main()
 {
-	int exp = 0;
-	double fraction = 0.0;
-	fraction = frexp(1024, &exp);
-	printf("exp = %d\n", exp);
-	printf("fraction = %f\n", fraction);
+	double answer = sinh(0.5);
+	printf("sinh(0.5) = %f\n", answer);
 	return 0; 
 }
 
