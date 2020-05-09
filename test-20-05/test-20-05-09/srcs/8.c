@@ -3,9 +3,8 @@
 
 int main()
 {
-	double angle = 0.0;
-	angle = atan2(1, 2);
-	printf("angle = %f\n", angle);
+	double answer = cos(0.5);
+	printf("cos [0.5] = %f\n", answer);
 	return 0; 
 }
 

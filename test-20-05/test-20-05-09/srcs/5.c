@@ -3,12 +3,8 @@
 
 int main()
 {
-	double value[] = { 4.8, 1.12, -2.2, 0 };
-	int i = 0;
-	for (i = 0; value[i] != 0; i++)
-	{
-		printf("%f => %f\n", value[i], ceil(value[i]));
-	}
+	double answer = cosh(0.5);
+	printf("cosh (0.5) = %f\n", answer);
 	return 0; 
 }
 
