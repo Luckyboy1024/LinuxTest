@@ -4,8 +4,8 @@
 int main()
 {
 	double answer = 0.0;
-	answer = log(100);
-	printf("log(100) = %f\n", answer);
+	answer = pow(2, 10);
+	printf("2^10 = %f\n", answer);
 	return 0; 
 }
 

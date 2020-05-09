@@ -3,8 +3,11 @@
 
 int main()
 {
-	double answer = cosh(0.5);
-	printf("cosh (0.5) = %f\n", answer);
+	double integral = 0.0;
+	double fractional = 0.0;
+	fractional = modf(3.14159, &integral);
+	printf("integral   = %f\n", integral);
+	printf("fractional = %f\n", fractional);
 	return 0; 
 }
 

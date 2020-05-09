@@ -3,9 +3,9 @@
 
 int main()
 {
-	double angle = 0.0;
-	angle = acos(0.5);
-	printf("angle = %f\n", angle);
+	double answer = 0.0;
+	answer = log10(100);
+	printf("log10(100) = %f\n", answer);
 	return 0; 
 }
 

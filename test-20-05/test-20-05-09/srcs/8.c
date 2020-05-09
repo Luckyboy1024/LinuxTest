@@ -1,10 +1,11 @@
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 
 int main()
 {
-	double answer = cos(0.5);
-	printf("cos [0.5] = %f\n", answer);
+	ldiv_t answer;
+	answer = ldiv(2345678, 76542);
+	printf("Quotient = %ld, remainder = %ld\n", answer.quot, answer.rem);
 	return 0; 
 }
 

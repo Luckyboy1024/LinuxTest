@@ -1,11 +1,13 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
 
 int main()
 {
-	div_t answer;
-	answer = div(67, 4);
-	printf("Quotient = %d, remainder = %d\n", answer.quot,answer.rem);
+	int exp = 2;
+	double x = 3.0;
+	double answer = 0.0;
+	answer = ldexp(x, exp);
+	printf("3*2^(2) = %f\n", answer);
 	return 0; 
 }
 
