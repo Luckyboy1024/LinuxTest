@@ -1,17 +1,26 @@
 # Linux_test
 
-#### 介绍
+#### 仓库结构
+- 2019-folder   存放 2019 年内学习认识过程中的记录
+- 2020-folder   存放 2020 年内学习认识过程中的记录
+- 2021-folder   存放 2021 年内学习认识过程中的记录
+- script        存放写过的一些 "脚本" 文件
+- project       写出的各种测试程序
+
+#### 码库介绍
 测试代码——linux
 
 #### 软件架构
 软件架构说明
 
 
-#### 安装教程
+#### 提交指令
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  git status .
+2.  git add [filename]
+3.  git commit -m "*****"
+4.  git push origin master  将本地仓库中的 origin 分支记录上传到云仓库的 master 分支上
+5.  git push github master  同步传输到github中的另一个仓库中，github中对应的仓库分支是master
 
 #### 使用说明
 
