@@ -1,5 +1,5 @@
 #!/bin/bash 
-date=\test-20-$(date +%m)\-$(date +%d)
+date=\test-21-$(date +%m)\-$(date +%d)
 
 fill_vim()
 {
