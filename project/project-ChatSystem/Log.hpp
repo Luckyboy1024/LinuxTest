@@ -21,3 +21,7 @@ void Log(std::string msg, int level, std::string file, int line)
 
 }
 
+#define LOG(msg, level) Log(msg, level, __FILE__, __LINE__)
+
+
+
