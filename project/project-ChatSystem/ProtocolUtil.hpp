@@ -1,7 +1,5 @@
 #pragma once 
-
 #include <iostream>
-#include "Log.hpp"
 
 class SocketApi{
 	public:
@@ -19,17 +17,26 @@ class SocketApi{
 		{
 			struct Sockaddr_in local;
 			local.sin_family = AF_INET;
-			local.sin_addr.s_addr = htonl(INADDR_ANY);  
+			local.sin_addr.s_addr = htonl(INADDR_ANY);
 			local.sin_port = htons(port);
 
-			if(bind(sock, (struct sockaddr*)&local, sizeof(local)) < 0)	// 绑定失败
+			if(bind(sock, (struct sockaddr*) & local, sizeof(local)) < 0)
 			{
-				LOG("socket error", ERROR);
+				LOG("socket error!", ERROR);
 				exit(2);
 			}
 		}
-		static void Listen(int sock)
+		static void Listen(int sock)		// 监听
 		{
-
+			if(listen(sock, ) < 0)
+			{
+				LOG("Listen error!", ERROR);
+				exit(3);
+			}
+		}
+		static int Accept(int listen_sock)	    //获取新连接
+		{
+			struct 
+			int sock = accept(listen_sock, )
 		}
 }
