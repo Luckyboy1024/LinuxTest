@@ -12,7 +12,7 @@ const char *log_level[] = {
 	"Warning",
 	"Error",
 	NULL,
-}
+};
 
 void Log(std::string msg, int level, std::string file, int line)
 {
