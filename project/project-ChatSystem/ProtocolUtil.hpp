@@ -21,7 +21,7 @@ class SocketApi{
 			{
 				// 打印日志
 				LOG("socket error!", ERROR);
-				exit(1);
+				exit(2);
 			}
 		}
 		static void Bind(int sock, int port)	// 绑定端口号和套接字
@@ -34,7 +34,7 @@ class SocketApi{
 			if(bind(sock, (struct sockaddr*) & local, sizeof(local)) < 0)	// 如果绑定失败
 			{
 				LOG("socket error!", ERROR);
-				exit(2);
+				exit(3);
 			}
 		}
 		static void Listen(int sock)		// 监听
@@ -42,7 +42,7 @@ class SocketApi{
 			if(listen(sock, BACKLOG) < 0)		// 全连接已经建立好的个数为 BACKLOG+1 个
 			{
 				LOG("Listen error!", ERROR);
-				exit(3);
+				exit(4);
 			}
 		}
 		static int Accept(int listen_sock, std::string &out_ip, int &out_port)	    //获取新连接
